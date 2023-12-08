@@ -73,7 +73,15 @@ void set_imaginaire(complexe_t *z, double r);
 /**
  * init
  *
- * CONTRAT À COMPLÉTER
+ * Cette fonction modifie un complexe en y insérant un reel r et une partie imaginaire i
+ *
+ * Paramètres:
+ * z    l'adresse d'un complexe a modifier
+ * r    la partie réelle à insérer
+ * i    la partie imaginaire à insérer
+ *
+ * Cas d'erreur: aucun
+ * Retour: rien
  */
 /** PROCÉDURE À DÉCLARER **/
 void init(complexe_t *z, double r, double i);
@@ -186,7 +194,14 @@ void puissance(complexe_t *resultat, complexe_t op, int exposant);
 /**
  * module_carre
  *
- * CONTRAT À COMPLETER
+ * Cette fonction retourne le module au carré du complexe donné et le retourne
+ *
+ * Paramètres:
+ * op   complexe dont le module au carré est calculé
+ *
+ * Retour: double
+ *
+ * Post-condition: le retour = module(op)**2
  */
 /** FONCTION À DÉCLARER **/
 double module_carre(complexe_t op);
@@ -194,7 +209,14 @@ double module_carre(complexe_t op);
 /**
  * module
  *
- * CONTRAT À COMPLETER
+ * Cette fonction renvoie le module d'un complexe donné
+ *
+ * Paramètres:
+ * op   complexe dont on retourne le module
+ *
+ * Retour: double
+ *
+ * Post-condition: le retour = module_carre(op)**(1/2)
  */
 /** FONCTION À DÉCLARER **/
 double module(complexe_t op);
@@ -202,7 +224,14 @@ double module(complexe_t op);
 /**
  * argument
  *
- * CONTRAT À COMPLETER
+ * Cette fonction renvoie l'argument du complexe donné
+ *
+ * Paramètres:
+ * op   complexe dont on calcule l'argument
+ *
+ * Retour: double
+ *
+ * Post-Condition: le retour = l'argument du complexe op
  */
 /** FONCTION À DÉCLARER **/
 double argument(complexe_t op);
